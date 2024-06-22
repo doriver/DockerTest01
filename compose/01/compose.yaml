@@ -1,0 +1,8 @@
+services:
+  springBoot:
+    build: ./was
+    ports:
+      - "8000:5000"
+  nginx:
+    build: ./webServer
+    
