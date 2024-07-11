@@ -1,0 +1,7 @@
+services:
+  spring:
+    build: ./was
+    ports:
+      - "8080:8080"
+    volumes:
+      - D:\Sts4.14.0\springTest\upload\invest\images:/upload/images
