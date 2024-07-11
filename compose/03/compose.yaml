@@ -1,7 +1,23 @@
 services:
-  spring:
-    build: ./was
+  was01:
+    build: ./was/buildContext
     ports:
-      - "8080:8080"
+      - "8081:8080"
     volumes:
       - D:\Sts4.14.0\springTest\upload\invest\images:/upload/images
+  
+  was02:
+    build: ./was/buildContext
+    ports:
+      - "8082:8080"
+    volumes:
+      - D:\Sts4.14.0\springTest\upload\invest\images:/upload/images
+
+  nginx:
+    build: ./webServer/buildContext
+    ports:
+      - "80:80"
+    volumes:
+      - D:\dockerTest\compose\03\webServer\etcNginx\nginx.conf:/etc/nginx/nginx.conf 
+      - D:\dockerTest\compose\03\webServer\etcNginx\conf.d\default.conf:/etc/nginx/conf.d/default.conf
+      - D:\dockerTest\compose\03\webServer\varCacheNginx:/asdcache
