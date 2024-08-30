@@ -10,3 +10,6 @@ jar파일 필요
 
 * Nginx 컨테이너   
 /etc/nginx/nginx.conf 와 /etc/nginx/conf.d/default.conf : Nginx의 설정파일
+
+was디렉토리 : springBoot
+webServer디렉토리 : Nginx
