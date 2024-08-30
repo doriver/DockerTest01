@@ -1,4 +1,4 @@
-# 도커 컨테이너 운영에 필요한 것들 모아둠
+# 투자SNS 컨테이너 환경
 ## buildContext, compose up, network
 ### volume, port 설정
 * SpringBoot 컨테이너   
